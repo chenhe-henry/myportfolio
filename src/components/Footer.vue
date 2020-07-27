@@ -8,7 +8,7 @@
       role="media"
       :title="media.name"
       target="_blank"
-      :download="media.name === 'resume' ? true : false"
+      :download="media.name === 'resume' ? media.link : false"
     >
       <font-awesome-icon :icon="media.icon" class="footer__link-icon" />
     </a>
@@ -37,7 +37,7 @@ export default {
         },
         {
           name: "resume",
-          link: "/assets/ChenHe-Resume.pdf",
+          link: "ChenHe-Resume.pdf",
           icon: ["fas", "file-download"],
         },
       ],
