@@ -15,7 +15,11 @@
               }"
         class="project"
       >
-        <img :src="project.img" :alt="project.name" class="project__img" />
+        <img
+          :src="`https://chenhe-henry.github.io/myportfolio`+ project.img"
+          :alt="project.name"
+          class="project__img"
+        />
         <p class="project__tech">{{project.techStack}}</p>
       </router-link>
     </div>
