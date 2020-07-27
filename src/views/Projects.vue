@@ -15,11 +15,7 @@
               }"
         class="project"
       >
-        <img
-          :src="`https://chenhe-henry.github.io/myportfolio`+ project.img"
-          :alt="project.name"
-          class="project__img"
-        />
+        <img :src="project.img" :alt="project.name" class="project__img" />
         <p class="project__tech">{{project.techStack}}</p>
       </router-link>
     </div>
@@ -34,7 +30,7 @@ export default {
         {
           id: "1",
           name: "To do list",
-          img: "/todolist.jpg",
+          img: "https://chenhe-henry.github.io/myportfolio/todolist.jpg",
           description: `This is the first project I created in GA. Built with HTML, CSS
               and jQuery, this simple "To do list" allows you to add, edit,
               delete, highlight, check and search “todos”.`,
@@ -45,7 +41,7 @@ export default {
         {
           id: "2",
           name: "Health tracking",
-          img: "/healthtracking.jpg",
+          img: "https://chenhe-henry.github.io/myportfolio/healthtracking.jpg",
           description: ` This is the first full-stack project I have done. A health
               tracking system which allows you to login and helps you to record
               your health data.`,
@@ -57,7 +53,7 @@ export default {
         {
           id: "3",
           name: "Find Home",
-          img: "/findhome.jpg",
+          img: "https://chenhe-henry.github.io/myportfolio/findhome.jpg",
           description: ` The final project in GA. Created with React, Node, Express,
               MongoDB and Mongoose. A web app allows you to login with Google
               account, search and get details of properties for rental.`,
@@ -69,7 +65,7 @@ export default {
         {
           id: "4",
           name: "My Portfolio",
-          img: "/myportfolio.jpg",
+          img: "https://chenhe-henry.github.io/myportfolio/myportfolio.jpg",
           description: ` This is the first full-stack project I have done. A health
               tracking system which allows you to login and helps you to record
               your health data.`,
