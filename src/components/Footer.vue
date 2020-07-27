@@ -12,14 +12,20 @@
     >
       <font-awesome-icon :icon="media.icon" class="footer__link-icon" />
     </a>
-    <a href="https://chenhe-henry.github.io/#/myportfolio/ChenHe-Resume.pdf"
-      >Download</a
-    ><a href="https://chenhe-henry.github.io/myportfolio/ChenHe-Resume.pdf"
+    <a
+      target="_blank"
+      href="https://chenhe-henry.github.io/#/myportfolio/ChenHe-Resume.pdf"
       >Download</a
     ><a
+      target="_blank"
+      href="https://chenhe-henry.github.io/myportfolio/ChenHe-Resume.pdf"
+      >Download</a
+    ><a
+      target="_blank"
       href="https://chenhe-henry.github.io/#/myportfolio/public/ChenHe-Resume.pdf"
       >Download</a
     ><a
+      target="_blank"
       href="https://chenhe-henry.github.io/myportfolio/public/ChenHe-Resume.pdf"
       >Download</a
     >
