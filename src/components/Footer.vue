@@ -1,69 +1,35 @@
 <template>
   <div class="footer">
-    <a
-      class="footer__link"
-      :href="media.name === 'email' ? `mailto:${media.link}` : media.link"
-      v-for="media in medias"
-      :key="media.name"
-      role="media"
-      :title="media.name"
-      target="_blank"
-      :download="media.name === 'resume' ? media.link : false"
-    >
-      <font-awesome-icon :icon="media.icon" class="footer__link-icon" />
+    <a class="footer__link" href="https://github.com/chenhe-henry" title="github" target="_blank">
+      <font-awesome-icon :icon="['fab', 'github-square']" class="footer__link-icon" />
     </a>
     <a
+      class="footer__link"
+      href="https://www.linkedin.com/in/chenhe-henry/"
+      title="linkedin"
       target="_blank"
-      download="ChenHe-Resume.pdf"
-      href="https://chenhe-henry.github.io/#/myportfolio/ChenHe-Resume.pdf"
-      >Download</a
-    ><a
-      target="_blank"
+    >
+      <font-awesome-icon :icon="['fab', 'linkedin-in']" class="footer__link-icon" />
+    </a>
+    <a class="footer__link" href="mailto: chenhe.elec@gmail.com" title="email" target="_blank">
+      <font-awesome-icon :icon="['fas', 'envelope-open-text']" class="footer__link-icon" />
+    </a>
+    <a
+      class="footer__link"
       download="ChenHe-Resume.pdf"
       href="https://chenhe-henry.github.io/myportfolio/ChenHe-Resume.pdf"
-      >Download</a
-    ><a
+      title="resume"
       target="_blank"
-      download="ChenHe-Resume.pdf"
-      href="https://chenhe-henry.github.io/#/myportfolio/public/ChenHe-Resume.pdf"
-      >Download</a
-    ><a
-      target="_blank"
-      download="ChenHe-Resume.pdf"
-      href="https://chenhe-henry.github.io/myportfolio/public/ChenHe-Resume.pdf"
-      >Download</a
     >
+      <font-awesome-icon :icon="['fas', 'file-download']" class="footer__link-icon" />
+    </a>
   </div>
 </template>
 
 <script>
 export default {
   data() {
-    return {
-      medias: [
-        {
-          name: "github",
-          link: "https://github.com/chenhe-henry",
-          icon: ["fab", "github-square"],
-        },
-        {
-          name: "linkedin",
-          link: "https://www.linkedin.com/in/chenhe-henry/",
-          icon: ["fab", "linkedin-in"],
-        },
-        {
-          name: "email",
-          link: "chenhe.elec@gmail.com",
-          icon: ["fas", "envelope-open-text"],
-        },
-        {
-          name: "resume",
-          link:
-            "https://chenhe-henry.github.io/#/myportfolio/ChenHe-Resume.pdf",
-          icon: ["fas", "file-download"],
-        },
-      ],
-    };
+    return {};
   },
 };
 </script>
