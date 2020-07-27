@@ -37,7 +37,7 @@ export default {
         },
         {
           name: "resume",
-          link: "ChenHe-Resume.pdf",
+          link: "/#/ChenHe-Resume.pdf",
           icon: ["fas", "file-download"],
         },
       ],
