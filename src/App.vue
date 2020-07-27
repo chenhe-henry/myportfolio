@@ -6,15 +6,12 @@
       <router-link class="navbar__link" :to="{ name: 'projects' }">Projects</router-link>
     </div>
     <router-view class="maincontent"></router-view>
-    <Footer />
   </div>
 </template>
 
 <script>
-import Footer from "@/components/Footer.vue";
 export default {
   name: "App",
-  components: { Footer },
 };
 </script>
 
@@ -29,18 +26,18 @@ export default {
 .navbar {
   font-size: 2rem;
   font-weight: 700;
-  background-color: grey;
+  background-color: black;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   height: 15vh;
 
   &__link {
-    color: black;
+    color: white;
     text-decoration: none;
     // border: 1px solid black;
     margin: auto;
     &:hover {
-      color: white;
+      color: rgb(27, 216, 42);
     }
   }
 }

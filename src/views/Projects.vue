@@ -19,11 +19,14 @@
         <p class="project__tech">{{project.techStack}}</p>
       </router-link>
     </div>
+    <Footer />
   </div>
 </template>
 
 <script>
+import Footer from "@/components/Footer.vue";
 export default {
+  components: { Footer },
   data() {
     return {
       projects: [
@@ -34,7 +37,7 @@ export default {
           description: `This is the first project I created in GA. Built with HTML, CSS
               and jQuery, this simple "To do list" allows you to add, edit,
               delete, highlight, check and search “todos”.`,
-          techStack: "HTML, CSS, Bootstrap and jQuery.",
+          techStack: ["HTML", "CSS", "Bootstrap", "jQuery"],
           demoLink: "https://chenhe-henry.github.io/gaseifx01-project0/",
           codeLink: "https://github.com/chenhe-henry/gaseifx01-project0",
         },
@@ -45,8 +48,13 @@ export default {
           description: ` This is the first full-stack project I have done. A health
               tracking system which allows you to login and helps you to record
               your health data.`,
-          techStack:
-            "HTML, CSS, Ruby on Rails, Bootstrap, and PostgreSQL database.",
+          techStack: [
+            "HTML",
+            "CSS",
+            "Ruby on Rails",
+            "Bootstrap",
+            "PostgreSQL database",
+          ],
           demoLink: "https://healthtracking01.herokuapp.com/",
           codeLink: "https://github.com/chenhe-henry/gaseifx01-project1",
         },
@@ -57,8 +65,15 @@ export default {
           description: ` The final project in GA. Created with React, Node, Express,
               MongoDB and Mongoose. A web app allows you to login with Google
               account, search and get details of properties for rental.`,
-          techStack:
-            "React.js, Express, Node.js, MongoDB, Mongoose, Google OAuth,Domain API, and Google Map API.",
+          techStack: [
+            "React.js",
+            "Express",
+            "Node.js",
+            "MongoDB",
+            "Google OAuth",
+            "Domain API",
+            "Google Map API",
+          ],
           demoLink: "https://findhome101.herokuapp.com/",
           codeLink: "https://github.com/chenhe-henry/gaseifx01-project3",
         },
@@ -69,8 +84,7 @@ export default {
           description: ` This is the first full-stack project I have done. A health
               tracking system which allows you to login and helps you to record
               your health data.`,
-          techStack:
-            "HTML, CSS, Ruby on Rails, Bootstrap, and PostgreSQL database.",
+          techStack: ["Vue.js", "HTML/CSS/SCSS", "gh-pages"],
           demoLink: "https://chenhe-henry.github.io/myportfolio",
           codeLink: "https://github.com/chenhe-henry/myportfolio",
         },
@@ -109,6 +123,7 @@ export default {
   &__tech {
     font-weight: 500;
     margin: 20px;
+    text-align: left;
   }
 }
 </style>

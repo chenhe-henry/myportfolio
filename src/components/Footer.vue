@@ -38,7 +38,7 @@ export default {
 .footer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  background-color: grey;
+  background-color: black;
   align-items: center;
   height: 15vh;
   width: 100%;

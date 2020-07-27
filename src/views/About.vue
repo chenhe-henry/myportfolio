@@ -12,11 +12,14 @@
       exciting challenges.
     </p>
     <h1>Skills</h1>
+    <Footer />
   </div>
 </template>
 
 <script>
-export default {};
+import Footer from "@/components/Footer.vue";
+export default { components: { Footer } };
 </script>
 
 <style lang="scss" scoped></style>
+    
