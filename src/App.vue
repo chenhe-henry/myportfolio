@@ -1,15 +1,9 @@
 <template>
   <div id="app">
     <div class="navbar">
-      <router-link class="navbar__link" :to="{ name: 'homepage' }"
-        >Home</router-link
-      >
-      <router-link class="navbar__link" :to="{ name: 'about' }"
-        >About</router-link
-      >
-      <router-link class="navbar__link" :to="{ name: 'about' }"
-        >About</router-link
-      >
+      <router-link class="navbar__link" :to="{ name: 'homepage' }">Home</router-link>
+      <router-link class="navbar__link" :to="{ name: 'about' }">About</router-link>
+      <router-link class="navbar__link" :to="{ name: 'projects' }">Projects</router-link>
     </div>
     <router-view class="maincontent"></router-view>
     <Footer />
@@ -31,7 +25,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 .navbar {
   font-size: 2rem;
@@ -39,7 +32,7 @@ export default {
   background-color: grey;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  height: 10vh;
+  height: 15vh;
 
   &__link {
     color: black;
@@ -52,6 +45,6 @@ export default {
   }
 }
 .maincontent {
-  height: 50vh;
+  height: 66vh;
 }
 </style>

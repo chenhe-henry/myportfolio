@@ -40,7 +40,7 @@ export default {
   grid-template-columns: repeat(4, 1fr);
   background-color: grey;
   align-items: center;
-  height: 20vh;
+  height: 15vh;
   width: 100%;
   text-transform: uppercase;
   font-weight: bold;
