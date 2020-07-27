@@ -14,18 +14,22 @@
     </a>
     <a
       target="_blank"
+      download="ChenHe-Resume.pdf"
       href="https://chenhe-henry.github.io/#/myportfolio/ChenHe-Resume.pdf"
       >Download</a
     ><a
       target="_blank"
+      download="ChenHe-Resume.pdf"
       href="https://chenhe-henry.github.io/myportfolio/ChenHe-Resume.pdf"
       >Download</a
     ><a
       target="_blank"
+      download="ChenHe-Resume.pdf"
       href="https://chenhe-henry.github.io/#/myportfolio/public/ChenHe-Resume.pdf"
       >Download</a
     ><a
       target="_blank"
+      download="ChenHe-Resume.pdf"
       href="https://chenhe-henry.github.io/myportfolio/public/ChenHe-Resume.pdf"
       >Download</a
     >
