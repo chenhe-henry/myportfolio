@@ -37,7 +37,8 @@ export default {
         },
         {
           name: "resume",
-          link: "https://chenhe-henry.github.io/myportfolio/ChenHe-Resume.pdf",
+          link:
+            "https://chenhe-henry.github.io/#/myportfolio/ChenHe-Resume.pdf",
           icon: ["fas", "file-download"],
         },
       ],
