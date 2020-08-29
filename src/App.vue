@@ -1,19 +1,14 @@
 <template>
   <div id="app">
-    <div class="navbar">
-      <router-link class="navbar__link" :to="{ name: 'homepage' }">Home</router-link>
-      <router-link class="navbar__link" :to="{ name: 'about' }">About</router-link>
-      <router-link class="navbar__link" :to="{ name: 'projects' }">Projects</router-link>
+    <div id="nav">
+      <router-link to="/" class="nav__link">Home</router-link>
+      <router-link to="/about" class="nav__link">About</router-link>
+      <router-link to="/projects" class="nav__link">Projects</router-link>
+      <router-link to="/contact" class="nav__link">Contact</router-link>
     </div>
-    <router-view class="maincontent"></router-view>
+    <router-view />
   </div>
 </template>
-
-<script>
-export default {
-  name: "App",
-};
-</script>
 
 <style lang="scss">
 #app {
@@ -22,26 +17,23 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  scroll-behavior: smooth;
+  // height: 100vh;
 }
-.navbar {
-  font-size: 2rem;
-  font-weight: 700;
-  background-color: black;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  height: 15vh;
 
-  &__link {
-    color: white;
+#nav {
+  padding: 30px;
+  font-size: 2rem;
+  background-color: grey;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  a {
+    font-weight: bold;
+    color: #2c3e50;
     text-decoration: none;
-    // border: 1px solid black;
-    margin: auto;
-    &:hover {
-      color: rgb(27, 216, 42);
+    &.router-link-exact-active {
+      color: white;
     }
   }
-}
-.maincontent {
-  height: 66vh;
 }
 </style>

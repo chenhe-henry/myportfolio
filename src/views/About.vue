@@ -1,5 +1,10 @@
 <template>
   <div>
+    <img
+      src="https://chenhe-henry.github.io/myportfolio/ChenHe.jpg"
+      class="homepage__avatar"
+      alt="Chen He"
+    />
     <h1>About Me</h1>
     <p>
       I'm a front-end developer with a background in electrical and electronic
@@ -12,6 +17,14 @@
       exciting challenges.
     </p>
     <h1>Skills</h1>
+    <h3 class="about__tech">
+      HTML/CSS/JavaScript
+      jQuery | Sass | Bootstrap
+      Ruby on Rails | SQL/Postgres
+      React.js | Express | Node | MongoDB
+      GitHub | Heroku
+      Amazon Web Services
+    </h3>
     <Footer />
   </div>
 </template>
@@ -21,5 +34,10 @@ import Footer from "@/components/Footer.vue";
 export default { components: { Footer } };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.homepage__avatar {
+  height: 200px;
+  clip-path: circle();
+}
+</style>
     

@@ -17,5 +17,11 @@ export default new Router({
       component: Project,
       props: true,
     },
+    {
+      path: "/contact",
+      name: "Contact",
+      component: () => import("@/components/Footer.vue"),
+    },
+    { path: "*", redirect: "/" },
   ],
 });

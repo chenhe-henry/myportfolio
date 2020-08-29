@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
@@ -13,5 +14,8 @@
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+    
+<script type="text/javascript">Calendly.initBadgeWidget({ url: 'https://calendly.com/chenhe', text: 'Schedule time with me', color: '#00a2ff', textColor: '#ffffff', branding: true });</script>
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
   </body>
 </html>
