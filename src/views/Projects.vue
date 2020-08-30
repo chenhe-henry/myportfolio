@@ -68,7 +68,7 @@ export default {
           description: ` This is the first full-stack project I have done. A health
               tracking system which allows you to login and helps you to record
               your health data.`,
-          techStack: "Vue.js, HTML/CSS/SCSS, netlify",
+          techStack: "Vue.js, HTML/CSS/SCSS, gh-pages, responsive design",
           demoLink: "https://chenhe-henry.github.io/myportfolio",
           codeLink: "https://github.com/chenhe-henry/myportfolio",
         },
