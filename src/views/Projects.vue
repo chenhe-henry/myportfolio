@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Nav />
     <div class="projects">
       <div v-for="project in projects" :key="project.id" class="project">
         <div class="project__shape">
@@ -14,12 +15,15 @@
         </div>
       </div>
     </div>
+    <Footer />
   </div>
 </template>
 
 <script>
+import Nav from "@/components/Nav.vue";
+import Footer from "@/components/Footer.vue";
 export default {
-  components: {},
+  components: { Nav, Footer },
   data() {
     return {
       projects: [

@@ -1,7 +1,6 @@
 <template>
-  <div>
-    <p class="footer__copyright">&copy; 2020 Chen He, All Right Reserved.</p>
-    <div class="footer">
+  <div class="footer">
+    <div class="footer__links">
       <a class="footer__link" href="https://github.com/chenhe-henry" title="github" target="_blank">
         <font-awesome-icon :icon="['fab', 'github-square']" class="footer__link-icon" />
       </a>
@@ -44,23 +43,24 @@ export default {
 
 <style lang="scss" scoped>
 .footer {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr) 2fr;
   background-color: grey;
-  align-items: center;
-  height: 15vh;
-  width: 100%;
-
   font-weight: bold;
-  &__link,
-  a {
-    font-size: 2.5rem;
-    margin: auto;
-    color: black;
-    text-decoration: none;
-    transition: all 0.2s;
-    &:hover {
-      color: white;
+  &__links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) 2fr;
+    align-items: center;
+    height: 15vh;
+    width: 100%;
+    &__link,
+    a {
+      font-size: 2.5rem;
+      margin: auto;
+      color: black;
+      text-decoration: none;
+      transition: all 0.2s;
+      &:hover {
+        color: white;
+      }
     }
   }
 }

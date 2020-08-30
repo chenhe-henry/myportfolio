@@ -20,7 +20,7 @@ export default new Router({
     {
       path: "/contact",
       name: "Contact",
-      component: () => import("@/components/Footer.vue"),
+      component: () => import("@/views/Contact.vue"),
     },
     { path: "*", redirect: "/" },
   ],

@@ -1,8 +1,9 @@
 <template>
-  <div>
+  <div class="about">
+    <Nav />
     <img :src="getLogosUrl('ChenHe.jpg')" class="homepage__avatar" alt="Chen He" />
     <h1>About Me</h1>
-    <p>
+    <p class="about__brief">
       I'm a front-end developer with a background in electrical and electronic
       engineering. With over two years' experience as a technical executive, I
       have killer attention to detail, which means I see issues arising more
@@ -26,9 +27,10 @@
 </template>
 
 <script>
+import Nav from "@/components/Nav.vue";
 import Footer from "@/components/Footer.vue";
 export default {
-  components: { Footer },
+  components: { Nav, Footer },
   methods: {
     getLogosUrl(pic) {
       return require(`../assets/${pic}`);
@@ -38,6 +40,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.about {
+  height: 100vh;
+  &__brief {
+    margin: 0 25%;
+    text-align: justify;
+    font-size: 1.2rem;
+    font-weight: 500;
+    &::first-letter {
+      font-size: 2rem;
+      color: brown;
+    }
+  }
+}
 .homepage__avatar {
   height: 200px;
   clip-path: circle();
