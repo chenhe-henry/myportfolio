@@ -56,7 +56,7 @@ export default {
   height: 100vh;
 
   &__brief {
-    margin: 0 5vw;
+    margin: 0 5vw 10vh 5vw;
     text-align: justify;
     font-size: 1.2rem;
     font-weight: 500;
@@ -69,6 +69,7 @@ export default {
     font-size: 1.2rem;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
+    margin-bottom: 10vh;
     &-col {
       margin: 2vh;
     }
