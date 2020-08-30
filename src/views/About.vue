@@ -1,10 +1,6 @@
 <template>
   <div>
-    <img
-      src="https://chenhe-henry.github.io/myportfolio/ChenHe.jpg"
-      class="homepage__avatar"
-      alt="Chen He"
-    />
+    <img :src="getLogosUrl('ChenHe.jpg')" class="homepage__avatar" alt="Chen He" />
     <h1>About Me</h1>
     <p>
       I'm a front-end developer with a background in electrical and electronic
@@ -31,7 +27,14 @@
 
 <script>
 import Footer from "@/components/Footer.vue";
-export default { components: { Footer } };
+export default {
+  components: { Footer },
+  methods: {
+    getLogosUrl(pic) {
+      return require(`../assets/${pic}`);
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>

@@ -3,7 +3,7 @@
     <header class="header" id="header">
       <div class="header__logo-box">
         <a href="#header">
-          <img src="../assets/logo_transparent 2.png" alt="Logo" class="header__logo" />
+          <img :src="getLogosUrl('logo.png')" alt="Logo" class="header__logo" />
         </a>
       </div>
       <div class="header__text-box">
@@ -26,6 +26,11 @@
 export default {
   name: "Home",
   components: {},
+  methods: {
+    getLogosUrl(pic) {
+      return require(`../assets/${pic}`);
+    },
+  },
 };
 </script>
 <style lang="scss" scoped>

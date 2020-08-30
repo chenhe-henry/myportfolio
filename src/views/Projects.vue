@@ -3,7 +3,7 @@
     <div class="projects">
       <div v-for="project in projects" :key="project.id" class="project">
         <div class="project__shape">
-          <img :src="project.img" :alt="project.name" class="project__img" />
+          <img :src="getLogosUrl(project.img)" :alt="project.name" class="project__img" />
         </div>
         <div class="project__tech">
           <p class="project__title">{{project.name}}</p>
@@ -26,7 +26,7 @@ export default {
         {
           id: "1",
           name: "To do list",
-          img: "https://chenhe-henry.github.io/myportfolio/todolist.jpg",
+          img: "todolist.jpg",
           description: `This is the first project I created in GA. Built with HTML, CSS
               and jQuery, this simple "To do list" allows you to add, edit,
               delete, highlight, check and search “todos”.`,
@@ -37,18 +37,18 @@ export default {
         {
           id: "2",
           name: "Health tracking",
-          img: "https://chenhe-henry.github.io/myportfolio/healthtracking.jpg",
+          img: "healthtracking.jpg",
           description: ` This is the first full-stack project I have done. A health
               tracking system which allows you to login and helps you to record
               your health data.`,
           techStack: "HTML,CSS,Vue.js,gh-pages, local storage",
-          demoLink: "https://healthtracking01.herokuapp.com/",
-          codeLink: "https://github.com/chenhe-henry/gaseifx01-project1",
+          demoLink: "https://chenhe-henry.github.io/health-tracking",
+          codeLink: "https://github.com/chenhe-henry/health-tracking",
         },
         {
           id: "3",
           name: "Find Home",
-          img: "https://chenhe-henry.github.io/myportfolio/findhome.jpg",
+          img: "findhome.jpg",
           description: ` The final project in GA. Created with React, Node, Express,
               MongoDB and Mongoose. A web app allows you to login with Google
               account, search and get details of properties for rental.`,
@@ -60,7 +60,7 @@ export default {
         {
           id: "4",
           name: "My Portfolio",
-          img: "https://chenhe-henry.github.io/myportfolio/myportfolio.jpg",
+          img: "myportfolio.jpg",
           description: ` This is the first full-stack project I have done. A health
               tracking system which allows you to login and helps you to record
               your health data.`,
@@ -71,12 +71,17 @@ export default {
       ],
     };
   },
+  methods: {
+    getLogosUrl(pic) {
+      return require(`../assets/${pic}`);
+    },
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 .projects {
-  margin: 0 5vw;
+  margin: 0 15vw;
   display: grid;
 }
 .project {
@@ -95,7 +100,7 @@ export default {
     transform: translateY(0);
   }
   &__title {
-    background-image: linear-gradient(to right, #00c3ff, #fff700);
+    background-image: linear-gradient(to right, #fff700, #00c3ff);
     -webkit-background-clip: text;
     color: transparent;
     font-size: 3rem;
