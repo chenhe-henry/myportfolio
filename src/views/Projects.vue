@@ -58,7 +58,7 @@ export default {
           img: "healthtracking.jpg",
           description: ` This is a health
               tracking system which allows you to record
-              your health data, and calculate your BMI (body mass index) to have a overview of your health condition.`,
+              your health data, and calculate your BMI (body mass index) to have an overview of your health condition.`,
           techStack: "HTML, CSS, Vue.js, gh-pages, local storage",
           demoLink: "https://chenhe-henry.github.io/health-tracking",
           codeLink: "https://github.com/chenhe-henry/health-tracking",
