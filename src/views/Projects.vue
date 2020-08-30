@@ -4,11 +4,13 @@
     <div class="projects">
       <div v-for="project in projects" :key="project.id" class="projects__project">
         <div class="projects__project__shape">
-          <img
-            :src="getLogosUrl(project.img)"
-            :alt="project.name"
-            class="projects__project__shape-img"
-          />
+          <a :href="project.demoLink" target="_blank">
+            <img
+              :src="getLogosUrl(project.img)"
+              :alt="project.name"
+              class="projects__project__shape-img"
+            />
+          </a>
         </div>
         <div class="projects__project__brief">
           <p class="projects__project__brief-title">{{project.name}}</p>
@@ -54,9 +56,9 @@ export default {
           id: "2",
           name: "Health tracking",
           img: "healthtracking.jpg",
-          description: ` This is the first full-stack project I have done. A health
-              tracking system which allows you to login and helps you to record
-              your health data.`,
+          description: ` This is a health
+              tracking system which allows you to record
+              your health data, and calculate your BMI (body mass index) to have a overview of your health condition.`,
           techStack: "HTML, CSS, Vue.js, gh-pages, local storage",
           demoLink: "https://chenhe-henry.github.io/health-tracking",
           codeLink: "https://github.com/chenhe-henry/health-tracking",
@@ -77,9 +79,7 @@ export default {
           id: "4",
           name: "My Portfolio",
           img: "myportfolio.jpg",
-          description: ` This is the first full-stack project I have done. A health
-              tracking system which allows you to login and helps you to record
-              your health data.`,
+          description: `A simple multi-page portfolio, keep learning and growing. Continuously refactor with new tech.`,
           techStack: "Vue.js, HTML/CSS/SCSS, gh-pages, responsive design",
           demoLink: "https://chenhe-henry.github.io/myportfolio",
           codeLink: "https://github.com/chenhe-henry/myportfolio",
@@ -154,8 +154,9 @@ export default {
           width: 20vw;
         }
         &:hover {
-          transform: scale(0.9);
-          filter: blur(3px) brightness(70%);
+          // transform: scale(0.9);
+          // filter: blur(3px) brightness(70%);
+          transform: translateY(-2vh);
         }
       }
     }
