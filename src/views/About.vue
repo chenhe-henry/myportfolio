@@ -15,12 +15,24 @@
     </p>
     <h1>Skills</h1>
     <h3 class="about__tech">
-      HTML/CSS/JavaScript
-      jQuery | Sass | Bootstrap
-      Ruby on Rails | SQL/Postgres
-      React.js | Express | Node | MongoDB
-      GitHub | Heroku
-      Amazon Web Services
+      <div class="about__tech-col">
+        <div>Responsive Design</div>
+        <div>HTML/CSS/Sass</div>
+        <div>BEM method</div>
+        <div>Bootstrap</div>
+      </div>
+      <div class="about__tech-col">
+        <div>JavaScript/jQuery</div>
+        <div>React.js/Vue.js</div>
+        <div>Ruby on Rails</div>
+        <div>MySQL</div>
+      </div>
+      <div class="about__tech-col">
+        <div>Heroku/Netlify</div>
+        <div>Express</div>
+        <div>GitHub</div>
+        <div>Node</div>
+      </div>
     </h3>
     <Footer />
   </div>
@@ -44,17 +56,30 @@ export default {
   height: 100vh;
 
   &__brief {
-    margin: 0 25%;
+    margin: 0 5vw;
     text-align: justify;
     font-size: 1.2rem;
     font-weight: 500;
     &::first-letter {
-      font-size: 2rem;
+      font-size: 2.4rem;
       color: brown;
+    }
+  }
+  &__tech {
+    font-size: 1.2rem;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    &-col {
+      margin: 2vh;
+    }
+    @media (min-width: 1024px) {
+      grid-template-rows: none;
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 }
 .homepage__avatar {
+  margin: 5vh 0 2vh 0;
   height: 200px;
   clip-path: circle();
 }
