@@ -37,31 +37,58 @@ export default {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -60%);
+    transform: translate(-50%, -40%);
     text-align: center;
   }
   &__logo-box {
     position: absolute;
     top: 0;
-    left: 4rem;
+    left: 20%;
     transition: all 0.2s;
+    @media (min-width: 375px) {
+      left: 0;
+    }
+    @media (min-width: 768px) {
+      left: 1rem;
+    }
+    @media (min-width: 1024px) {
+      left: 2rem;
+    }
+    @media (min-width: 1440px) {
+      left: 2rem;
+    }
   }
   &__logo {
-    height: 15rem;
+    height: 10rem;
     animation: enterFromRight ease-out 3s 1;
     animation-fill-mode: backwards;
+    @media (min-width: 375px) {
+      height: 10rem;
+    }
+    @media (min-width: 768px) {
+      height: 12rem;
+    }
+    @media (min-width: 1024px) {
+      height: 15rem;
+    }
+    @media (min-width: 1440px) {
+      height: 15rem;
+    }
   }
 }
-@media (min-width: 768px) {
-}
+
 .btn {
   text-decoration: none;
   display: inline-block;
   border-radius: 10rem;
   transition: all 0.4s;
-  padding: 2rem 4rem;
+  padding: 1rem 2rem;
   position: relative;
-  font-size: 1rem;
+  font-size: 0.8rem;
+  @media (min-width: 768px) {
+    padding: 2rem 4rem;
+    font-size: 1rem;
+  }
   &:link,
   &:visited {
     text-transform: uppercase;
@@ -109,20 +136,49 @@ export default {
   transition: all 0.2s;
   &--main {
     display: block;
-    font-size: 4rem;
+    font-size: 1.2rem;
     margin-bottom: 6rem;
     animation: comingInRight 3s ease-out 3s;
-    letter-spacing: 3rem;
+    letter-spacing: 1rem;
     color: white;
     animation-fill-mode: backwards;
+    @media (min-width: 375px) {
+      font-size: 1.5rem;
+      letter-spacing: 1rem;
+    }
+    @media (min-width: 768px) {
+      font-size: 2rem;
+      letter-spacing: 2rem;
+    }
+    @media (min-width: 1024px) {
+      font-size: 2.3rem;
+      letter-spacing: 3rem;
+    }
+    @media (min-width: 1440px) {
+      font-size: 3rem;
+      letter-spacing: 3rem;
+    }
   }
   &--sub {
     display: block;
-    font-size: 1.5rem;
+    font-size: 0.8rem;
     animation: comingInLeft 3s ease-out 0.75s;
     letter-spacing: 1rem;
     color: white;
     animation-fill-mode: backwards;
+    @media (min-width: 375px) {
+      font-size: 1rem;
+      letter-spacing: 1rem;
+    }
+    @media (min-width: 768px) {
+      font-size: 1.5rem;
+    }
+    @media (min-width: 1024px) {
+      font-size: 1.8rem;
+    }
+    @media (min-width: 1440px) {
+      font-size: 2rem;
+    }
   }
 }
 @keyframes moveInBottom {
