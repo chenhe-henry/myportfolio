@@ -113,7 +113,7 @@ export default {
     border-radius: 10px;
     color: black;
     text-decoration: none;
-    margin: 30px auto;
+    margin: 5vh auto;
     width: 100%;
     transition: all 0.2s;
     box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56),
