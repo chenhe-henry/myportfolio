@@ -42,6 +42,7 @@ export default {
 <style lang="scss" scoped>
 .about {
   height: 100vh;
+
   &__brief {
     margin: 0 25%;
     text-align: justify;
