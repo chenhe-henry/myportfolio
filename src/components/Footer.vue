@@ -47,17 +47,23 @@ export default {
   font-weight: bold;
   &__links {
     display: grid;
-    grid-template-columns: repeat(4, 1fr) 2fr;
+    grid-template-rows: repeat(5, 1fr);
     align-items: center;
-    height: 15vh;
     width: 100%;
+    padding: 20px 0;
+    @media (min-width: 1024px) {
+      grid-template-rows: none;
+      grid-template-columns: repeat(4, 1fr) 2fr;
+    }
     &__link,
     a {
-      font-size: 2.5rem;
+      font-size: 2rem;
       margin: auto;
       color: black;
       text-decoration: none;
       transition: all 0.2s;
+      @media (min-width: 1024px) {
+      }
       &:hover {
         color: white;
       }
