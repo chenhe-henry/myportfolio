@@ -7,12 +7,14 @@ import {
   faUserSecret,
   faEnvelopeOpenText,
   faFileDownload,
+  faCalendarAlt,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faLinkedinIn,
   faGithubSquare,
 } from "@fortawesome/free-brands-svg-icons";
 library.add(
+  faCalendarAlt,
   faUserSecret,
   faEnvelopeOpenText,
   faFileDownload,

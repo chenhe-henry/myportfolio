@@ -16,22 +16,22 @@
     <h1>Skills</h1>
     <h3 class="about__tech">
       <div class="about__tech-col">
-        <div>Responsive Design</div>
-        <div>HTML/CSS/Sass</div>
-        <div>BEM method</div>
-        <div>Bootstrap</div>
+        <div class="about__tech-col-tech">Responsive Design</div>
+        <div class="about__tech-col-tech">HTML/CSS/Sass</div>
+        <div class="about__tech-col-tech">BEM method</div>
+        <div class="about__tech-col-tech">Bootstrap</div>
       </div>
       <div class="about__tech-col">
-        <div>JavaScript/jQuery</div>
-        <div>React.js/Vue.js</div>
-        <div>Ruby on Rails</div>
-        <div>MySQL</div>
+        <div class="about__tech-col-tech">JavaScript/jQuery</div>
+        <div class="about__tech-col-tech">React.js/Vue.js</div>
+        <div class="about__tech-col-tech">Ruby on Rails</div>
+        <div class="about__tech-col-tech">MySQL</div>
       </div>
       <div class="about__tech-col">
-        <div>Heroku/Netlify</div>
-        <div>Express</div>
-        <div>GitHub</div>
-        <div>Node</div>
+        <div class="about__tech-col-tech">Heroku/Netlify</div>
+        <div class="about__tech-col-tech">Express</div>
+        <div class="about__tech-col-tech">GitHub</div>
+        <div class="about__tech-col-tech">Node</div>
       </div>
     </h3>
     <Footer />
@@ -58,20 +58,23 @@ export default {
   &__brief {
     margin: 0 5vw 10vh 5vw;
     text-align: justify;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 500;
     &::first-letter {
-      font-size: 2.4rem;
+      font-size: 3rem;
       color: brown;
     }
   }
   &__tech {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     margin-bottom: 10vh;
     &-col {
       margin: 2vh;
+      &-tech {
+        padding: 0.5rem;
+      }
     }
     @media (min-width: 1024px) {
       grid-template-rows: none;
