@@ -119,7 +119,7 @@ export default {
   }
   &-white {
     background-color: white;
-    color: grey;
+    color: rgba(black, 0.8);
     &::after {
       background-color: white;
     }

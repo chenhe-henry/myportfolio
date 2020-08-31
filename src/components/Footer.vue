@@ -50,7 +50,7 @@ export default {
 
 <style lang="scss" scoped>
 .footer {
-  background-color: grey;
+  background-color: rgba(black, 0.8);
   font-weight: bold;
   &__links {
     display: grid;
@@ -66,11 +66,11 @@ export default {
   &__link,
   a {
     margin: auto;
-    color: black;
+    color: white;
     text-decoration: none;
     transition: all 0.2s;
     &:hover {
-      color: white;
+      color: rgb(29, 213, 216);
     }
   }
   &__link {

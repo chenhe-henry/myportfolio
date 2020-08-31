@@ -10,7 +10,7 @@
 #nav {
   padding: 10px;
   font-size: 2rem;
-  background-color: grey;
+  background-color: rgba(black, 0.8);
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   @media (min-width: 1024px) {
@@ -23,10 +23,10 @@
   }
   a {
     font-weight: bold;
-    color: #2c3e50;
+    color: white;
     text-decoration: none;
     &.router-link-exact-active {
-      color: white;
+      color: rgb(29, 213, 216);
     }
   }
 }

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <main>
     <Nav />
     <div class="projects">
       <div v-for="project in projects" :key="project.id" class="projects__project">
@@ -30,7 +30,7 @@
       </div>
     </div>
     <Footer />
-  </div>
+  </main>
 </template>
 
 <script>
@@ -190,6 +190,14 @@ export default {
         color: black;
         text-decoration: none;
         font-weight: bold;
+        padding: 5px;
+        border-radius: 5px;
+        &:hover,
+        &:active,
+        &:focus {
+          background-color: black;
+          color: white;
+        }
       }
     }
   }

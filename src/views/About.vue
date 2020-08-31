@@ -14,7 +14,7 @@
       exciting challenges.
     </p>
     <h1>Skills</h1>
-    <h3 class="about__tech">
+    <h2 class="about__tech">
       <div class="about__tech-col">
         <div class="about__tech-col-tech">Responsive Design</div>
         <div class="about__tech-col-tech">HTML/CSS/Sass</div>
@@ -33,7 +33,7 @@
         <div class="about__tech-col-tech">GitHub</div>
         <div class="about__tech-col-tech">Node</div>
       </div>
-    </h3>
+    </h2>
     <Footer />
   </div>
 </template>
