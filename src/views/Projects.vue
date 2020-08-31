@@ -165,6 +165,7 @@ export default {
       margin: 20px;
       text-align: center;
       width: 80vw;
+      font-size: 1.5rem;
       @media (min-width: 768px) {
         width: 93%;
       }
