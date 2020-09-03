@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <Nav />
-    <img :src="getLogosUrl('ChenHe.jpg')" class="homepage__avatar" alt="Chen He" />
+    <img :src="getLogosUrl('ChenHe-small.jpg')" class="homepage__avatar" alt="Chen He" />
     <h1>About Me</h1>
     <p class="about__brief">
       I'm a front-end developer with a background in electrical and electronic
