@@ -1,7 +1,11 @@
 <template>
   <div class="about">
     <Nav />
-    <img :src="getLogosUrl('ChenHe-small.jpg')" class="homepage__avatar" alt="Chen He" />
+    <img
+      :src="getLogosUrl('ChenHe-small.jpg')"
+      class="homepage__avatar"
+      alt="Chen He"
+    />
     <h1>About Me</h1>
     <p class="about__brief">
       I'm a front-end developer with a background in electrical and electronic
@@ -17,7 +21,7 @@
     <h2 class="about__tech">
       <div class="about__tech-col">
         <div class="about__tech-col-tech">Responsive Design</div>
-        <div class="about__tech-col-tech">HTML/CSS/Sass</div>
+        <div class="about__tech-col-tech">HTML/CSS/SCSS</div>
         <div class="about__tech-col-tech">BEM method</div>
         <div class="about__tech-col-tech">Bootstrap</div>
       </div>
@@ -28,9 +32,9 @@
         <div class="about__tech-col-tech">MySQL</div>
       </div>
       <div class="about__tech-col">
+        <div class="about__tech-col-tech">GitHub/Bitbucket</div>
         <div class="about__tech-col-tech">Heroku/Netlify</div>
         <div class="about__tech-col-tech">Express</div>
-        <div class="about__tech-col-tech">GitHub</div>
         <div class="about__tech-col-tech">Node</div>
       </div>
     </h2>
@@ -88,4 +92,3 @@ export default {
   clip-path: circle();
 }
 </style>
-    
