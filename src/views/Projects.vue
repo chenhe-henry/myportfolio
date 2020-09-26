@@ -2,7 +2,11 @@
   <main>
     <Nav />
     <div class="projects">
-      <div v-for="project in projects" :key="project.id" class="projects__project">
+      <div
+        v-for="project in projects"
+        :key="project.id"
+        class="projects__project"
+      >
         <div class="projects__project__shape">
           <a :href="project.demoLink" target="_blank">
             <img
@@ -13,19 +17,24 @@
           </a>
         </div>
         <div class="projects__project__brief">
-          <p class="projects__project__brief-title">{{project.name}}</p>
+          <p class="projects__project__brief-title">{{ project.name }}</p>
           <p class="projects__project__brief-tech">{{ project.techStack }}</p>
-          <p class="projects__project__brief-description">{{ project.description }}</p>
+          <p class="projects__project__brief-description">
+            {{ project.description }}
+          </p>
           <a
             :href="project.demoLink"
             target="_blank"
             class="projects__project__brief-link"
-          >Live Demo</a> |
+            >Live Demo</a
+          >
+          |
           <a
             :href="project.codeLink"
             target="_blank"
             class="projects__project__brief-link"
-          >Code Link</a>
+            >Code Link</a
+          >
         </div>
       </div>
     </div>
@@ -43,15 +52,14 @@ export default {
       projects: [
         {
           id: "1",
-          name: "To do list",
-          img: "todolist.jpg",
-          description: `This is the first project I created in GA. Built with HTML, CSS
-              and jQuery, this simple "To do list" allows you to add, edit,
-              delete, highlight, check and search “todos”.`,
-          techStack: "HTML, CSS, Bootstrap, jQuery",
-          demoLink: "https://chenhe-henry.github.io/gaseifx01-project0/",
-          codeLink: "https://github.com/chenhe-henry/gaseifx01-project0",
+          name: "My Portfolio",
+          img: "myportfolio.jpg",
+          description: `A simple multi-page portfolio, keep learning and growing. Continuously refactor with new tech.`,
+          techStack: "Vue.js, HTML/CSS/SCSS, gh-pages, responsive design",
+          demoLink: "https://chenhe-henry.github.io/myportfolio",
+          codeLink: "https://github.com/chenhe-henry/myportfolio",
         },
+
         {
           id: "2",
           name: "Health tracking",
@@ -77,12 +85,14 @@ export default {
         },
         {
           id: "4",
-          name: "My Portfolio",
-          img: "myportfolio.jpg",
-          description: `A simple multi-page portfolio, keep learning and growing. Continuously refactor with new tech.`,
-          techStack: "Vue.js, HTML/CSS/SCSS, gh-pages, responsive design",
-          demoLink: "https://chenhe-henry.github.io/myportfolio",
-          codeLink: "https://github.com/chenhe-henry/myportfolio",
+          name: "To do list",
+          img: "todolist.jpg",
+          description: `This is the first project I created in GA. Built with HTML, CSS
+              and jQuery, this simple "To do list" allows you to add, edit,
+              delete, highlight, check and search “todos”.`,
+          techStack: "HTML, CSS, Bootstrap, jQuery",
+          demoLink: "https://chenhe-henry.github.io/gaseifx01-project0/",
+          codeLink: "https://github.com/chenhe-henry/gaseifx01-project0",
         },
       ],
     };
