@@ -5,7 +5,7 @@
     </div>
     <div class="homepage__text-box">
       <h1 class="heading-primary">
-        <span class="heading-primary--main">Chen He</span>
+        <span class="heading-primary--main">Henry He</span>
         <span class="heading-primary--sub">A Front-end Developer</span>
       </h1>
       <router-link to="/about" class="btn btn-white btn-animated">

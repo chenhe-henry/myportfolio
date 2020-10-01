@@ -1,8 +1,16 @@
 <template>
   <div class="footer">
     <div class="footer__links">
-      <a class="footer__link" href="https://github.com/chenhe-henry" title="github" target="_blank">
-        <font-awesome-icon :icon="['fab', 'github-square']" class="footer__link-icon" />
+      <a
+        class="footer__link"
+        href="https://github.com/chenhe-henry"
+        title="github"
+        target="_blank"
+      >
+        <font-awesome-icon
+          :icon="['fab', 'github-square']"
+          class="footer__link-icon"
+        />
         <div class="footer__link-title">Github</div>
       </a>
       <a
@@ -11,29 +19,46 @@
         title="linkedin"
         target="_blank"
       >
-        <font-awesome-icon :icon="['fab', 'linkedin-in']" class="footer__link-icon" />
+        <font-awesome-icon
+          :icon="['fab', 'linkedin-in']"
+          class="footer__link-icon"
+        />
         <div class="footer__link-title">LinkedIn</div>
       </a>
-      <a class="footer__link" href="mailto: chenhe.elec@gmail.com" title="email" target="_blank">
-        <font-awesome-icon :icon="['fas', 'envelope-open-text']" class="footer__link-icon" />
+      <a
+        class="footer__link"
+        href="mailto: henryhe.dev@gmail.com"
+        title="email"
+        target="_blank"
+      >
+        <font-awesome-icon
+          :icon="['fas', 'envelope-open-text']"
+          class="footer__link-icon"
+        />
         <div class="footer__link-title">Email</div>
       </a>
       <a
         class="footer__link"
-        download="ChenHe-Resume.pdf"
-        href="https://chenhe-henry.github.io/myportfolio/ChenHe-Resume.pdf"
+        download="HenryHe-Resume.pdf"
+        href="https://chenhe-henry.github.io/myportfolio/HenryHe-Resume.pdf"
         title="resume"
         target="_blank"
       >
-        <font-awesome-icon :icon="['fas', 'file-download']" class="footer__link-icon" />
+        <font-awesome-icon
+          :icon="['fas', 'file-download']"
+          class="footer__link-icon"
+        />
         <div class="footer__link-title">Download Resume</div>
       </a>
       <a
         class="footer__link"
         href
-        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/chenhe'});return false;"
+        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/henryhe'});return false;"
       >
-        <font-awesome-icon :icon="['fas', 'calendar-alt']" class="footer__link-icon" />
+        <font-awesome-icon
+          :icon="['fas', 'calendar-alt']"
+          class="footer__link-icon"
+        />
         <div class="footer__link-title">Schedule time with me</div>
       </a>
     </div>
