@@ -13,4 +13,9 @@
   color: #2c3e50;
   scroll-behavior: smooth;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 </style>
