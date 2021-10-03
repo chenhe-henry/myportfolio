@@ -57,7 +57,7 @@ export default {
 
 <style lang="scss" scoped>
 .about {
-  height: 100vh;
+  min-height: 100vh;
 
   &__brief {
     margin: 0 5vw 5vh 5vw;
