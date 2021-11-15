@@ -20,19 +20,19 @@
     <h1>Skills</h1>
     <h2 class="about__tech">
       <div class="about__tech-col">
+        <div class="about__tech-col-tech">Bootstrap/Element UI</div>
         <div class="about__tech-col-tech">Responsive Design</div>
         <div class="about__tech-col-tech">HTML/CSS/SCSS</div>
         <div class="about__tech-col-tech">BEM method</div>
-        <div class="about__tech-col-tech">Bootstrap</div>
       </div>
       <div class="about__tech-col">
         <div class="about__tech-col-tech">JavaScript/jQuery</div>
-        <div class="about__tech-col-tech">React.js/Vue.js</div>
+        <div class="about__tech-col-tech">Vue.js/React.js</div>
         <div class="about__tech-col-tech">Ruby on Rails</div>
         <div class="about__tech-col-tech">MySQL</div>
       </div>
       <div class="about__tech-col">
-        <div class="about__tech-col-tech">GitHub/Bitbucket</div>
+        <div class="about__tech-col-tech">GitHub/Bitbucket/Jira</div>
         <div class="about__tech-col-tech">Heroku/Netlify</div>
         <div class="about__tech-col-tech">Express</div>
         <div class="about__tech-col-tech">Node</div>
